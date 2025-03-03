@@ -86,5 +86,3 @@ df = spark.read.option("header", "true").csv(file_path)
 
 # Show the DataFrame contents
 df.show()
-
-#
