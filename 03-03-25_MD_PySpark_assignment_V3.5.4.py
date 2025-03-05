@@ -19,3 +19,4 @@ df= df.withColumn("timestamp", date_format(to_timestamp("timestamp"), "MM/dd/yyy
 '''df.show()'''
 #4) Create a new field called Sys_date.  The value of this field for each row should be the Date extracted from the column Timestamp in the Dataframe
 df.show()
+df.write.csv('data.csv', header=True, mode='overwrite')
